@@ -318,10 +318,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⚙️ Manage", callback_data="cbmenu"),
-                    InlineKeyboardButton("⚡ Speed", callback_data="speed"),
+                    InlineKeyboardButton("🕺🏻 Manage 💃🏻", callback_data="cbmenu"),
+                    InlineKeyboardButton("🥀 Speed 🥀", callback_data="speed"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close Pannel", callback_data="cls")],
+                [InlineKeyboardButton(text="💔 Close Pannel 💔", callback_data="cls")],
             ]
         )
 
@@ -356,10 +356,10 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⚙️ Manage", callback_data="cbmenu"),
-                        InlineKeyboardButton("⚡ Speed", callback_data="speed"),
+                        InlineKeyboardButton("🕺 Manage 💃", callback_data="cbmenu"),
+                        InlineKeyboardButton("🥀 Speed 🥀", callback_data="speed"),
                     ],
-                    [InlineKeyboardButton(text="🗑 Close Pannel", callback_data="cls")],
+                    [InlineKeyboardButton(text="💔 Close Pannel 💔", callback_data="cls")],
                 ]
             )
 
@@ -451,10 +451,10 @@ async def play(_, message: Message):
             return await lel.edit(
                 "❌ **Song not found! Try searching with the correct title\nExample » /play 295**"
             )
-        await lel.edit("🔎 **Finding the song...**")
+        await lel.edit("💃🏻 **Finding the song...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🌟 **Processing sounds...**")
+        await lel.edit("💋 **Processing sounds...**")
         try:
             results = YoutubeSearch(query, max_results=5).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
