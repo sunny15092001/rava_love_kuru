@@ -85,7 +85,7 @@ def others_markup(videoid, user_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"skipvc"),
             InlineKeyboardButton(text="▢", callback_data=f"stopvc"),
         ],[
-            InlineKeyboardButton(text="Manage", callback_data=f"cls"),
+            InlineKeyboardButton(text="🕺🏻 Manage 💃🏻", callback_data=f"cls"),
         ],
         
     ]
@@ -109,7 +109,7 @@ fifth_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200% 🔊", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="❤️‍🩹 Back ❤️‍🩹", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -131,7 +131,7 @@ fourth_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200%", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="❤️‍🩹 Back ❤️‍🩹", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -153,7 +153,7 @@ third_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200%", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="❤️‍🩹 Back ❤️‍🩹", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -175,7 +175,7 @@ second_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200%", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="❤️‍🩹 Back ❤️‍🩹", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -197,7 +197,7 @@ first_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200%", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="❤️‍🩹 Back ❤️‍🩹", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -208,11 +208,11 @@ highquality_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("Low Quality", callback_data="low"),],
          [   InlineKeyboardButton("Medium Quality", callback_data="medium"),
             
-        ],[   InlineKeyboardButton("High Quality ✅", callback_data="high"),
+        ],[   InlineKeyboardButton("High Quality 🤍", callback_data="high"),
             
         ],[
-            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
-            InlineKeyboardButton(text="Close 🗑️", callback_data=f"cls"),
+            InlineKeyboardButton(text="❤️‍🩹Back ❤️‍🩹", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="Close 💔", callback_data=f"cls"),
         ],
     ]
 )
@@ -220,14 +220,14 @@ lowquality_keyboard = InlineKeyboardMarkup(
     [
         [
             
-            InlineKeyboardButton("Low Quality ✅", callback_data="low"),],
+            InlineKeyboardButton("Low Quality 🤍", callback_data="low"),],
          [   InlineKeyboardButton("Medium Quality", callback_data="medium"),
             
         ],[   InlineKeyboardButton("High Quality", callback_data="high"),
             
         ],[
-            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
-            InlineKeyboardButton(text="Close 🗑️", callback_data=f"cls"),
+            InlineKeyboardButton(text="❤️‍🩹 Back ❤️‍🩹", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="Close 💔", callback_data=f"cls"),
         ],
     ]
 )
@@ -236,13 +236,13 @@ mediumquality_keyboard = InlineKeyboardMarkup(
         [
             
             InlineKeyboardButton("Low Quality", callback_data="low"),],
-         [   InlineKeyboardButton("Medium Quality ✅", callback_data="medium"),
+         [   InlineKeyboardButton("Medium Quality 🤍", callback_data="medium"),
             
         ],[   InlineKeyboardButton("High Quality", callback_data="high"),
             
         ],[
-            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
-            InlineKeyboardButton(text="Close 🗑️", callback_data=f"cls"),
+            InlineKeyboardButton(text="❤️‍🩹 Back ❤️‍🩹", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="Close 💔", callback_data=f"cls"),
         ],
     ]
 )
@@ -255,7 +255,7 @@ dbclean_keyboard = InlineKeyboardMarkup(
         [    InlineKeyboardButton("Nope, Cancel !", callback_data="cbmenu"),
             
         ],[
-            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="❤️‍🩹 Back ❤️‍🩹", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -269,13 +269,13 @@ menu_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("▢", callback_data="stopvc"),
             
         ],[
-            InlineKeyboardButton(text="Volume", callback_data=f"fifth"),
-             InlineKeyboardButton(text="Quality", callback_data=f"high"),
+            InlineKeyboardButton(text="🧡Volume💛", callback_data=f"fifth"),
+             InlineKeyboardButton(text="💜 Quality ❤️", callback_data=f"high"),
         ],[
-            InlineKeyboardButton(text="CleanDB", callback_data=f"dbconfirm"),
-             InlineKeyboardButton(text="About", callback_data=f"nonabout"),
+            InlineKeyboardButton(text="💜 CleanDB ❤️", callback_data=f"dbconfirm"),
+             InlineKeyboardButton(text="🧡About💛", callback_data=f"nonabout"),
         ],[
-             InlineKeyboardButton(text="🗑️ Close Menu", callback_data=f"cls"),
+             InlineKeyboardButton(text="💔 Close Menu", callback_data=f"cls"),
         ],
     ]
 )
@@ -645,10 +645,10 @@ async def nonabout(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
               [
-                    InlineKeyboardButton("Support 🚶", url=f"https://t.me/{SUPPORT}"),
-                    InlineKeyboardButton("Updates 🤖", url=f"https://t.me/{UPDATE}")
+                    InlineKeyboardButton("🤍 Support 🖤", url=f"https://t.me/{SUPPORT}"),
+                    InlineKeyboardButton("🤍 Updates 🖤", url=f"https://t.me/{UPDATE}")
                 ],
-              [InlineKeyboardButton("🔙  Back Menu", callback_data="cbmenu")]]
+              [InlineKeyboardButton("❤️‍🩹  Back Menu ❤️‍🩹", callback_data="cbmenu")]]
         ),
     )
 
