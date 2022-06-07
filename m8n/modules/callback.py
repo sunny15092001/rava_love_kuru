@@ -14,7 +14,7 @@ from m8n.config import BOT_NAME
 @Client.on_callback_query(filters.regex("cbhome"))
 async def cbhome(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""Hello [👋]({START_PIC}) My name is **{BOT_NAME}**
+        f"""Hello [🕺🏻💃🏻]({START_PIC}) My name is **{BOT_NAME}**
 
 I'm most complete voice chat music player for playing high quality and unbreakable music in your groups voice chat with some useful features.
 
@@ -23,13 +23,14 @@ Use inline buttons given below to know more about me !!""",
             [
                 [
                     InlineKeyboardButton(
-                        "🏳‍🌈 Main Info", callback_data="cbabout"),
+                        "💞 Main Info 💞", callback_data="cbabout"),
                     InlineKeyboardButton(
-                        "🗂 Commands", callback_data="cbevery")
+                        "💋 Commands 💋", callback_data="cbevery")
+       
                 ],
                 [
                     InlineKeyboardButton(
-                        "☁️ Others", callback_data="others")
+                        "💙 Others 💚", callback_data="others")
                 ],
                 [
                     InlineKeyboardButton(
@@ -51,12 +52,12 @@ Check out all the commands given below by Click on the given inline buttons !!""
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Sudo Users", callback_data="cbsudo"),
+                    InlineKeyboardButton("🤍Sudo Users🖤", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("Everyone", callback_data="cbevery"),
-                    InlineKeyboardButton("Group Admins", callback_data="cbadmins"),
+                    InlineKeyboardButton("🤍Everyone🖤", callback_data="cbevery"),
+                    InlineKeyboardButton("🤍Group Admins🖤", callback_data="cbadmins"),
                 ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="cbhome")
+                    InlineKeyboardButton("❤️‍🩹 Go Back ❤️‍🩹", callback_data="cbhome")
                 ],
             ]
         ),
@@ -92,11 +93,11 @@ async def all_set(_, query: CallbackQuery):
             [
               [
                     InlineKeyboardButton(
-                        "Admins", callback_data="cbadmins"),
+                        "💞Admins💞", callback_data="cbadmins"),
                     InlineKeyboardButton(
-                        "Sudo/Owner", callback_data="cbsudo")
+                        "💜Sudo/Owner💜", callback_data="cbsudo")
                 ],
-              [InlineKeyboardButton("⬅️ Go Back", callback_data="cbhome")]]
+              [InlineKeyboardButton("❤️‍🩹 Go Back ❤️‍🩹", callback_data="cbhome")]]
         ),
     )
 
@@ -126,7 +127,7 @@ async def sudo_set(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔙 Go Back", callback_data="cbevery")
+                    InlineKeyboardButton("❤️‍🩹 Go Back ❤️‍🩹", callback_data="cbevery")
                 ],
             ]
         ),
@@ -161,7 +162,7 @@ async def admin_set(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔙 Go Back", callback_data="cbevery")
+                    InlineKeyboardButton("❤️‍🩹Go Back❤️‍🩹", callback_data="cbevery")
                 ],
             ]
         ),
@@ -178,15 +179,15 @@ Click on the given inline buttons to know all the information about the Bot !!""
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📨 Support", url=f"https://t.me/{SUPPORT}"),
-                    InlineKeyboardButton("📨 Updates", url=f"https://t.me/{UPDATE}")
+                    InlineKeyboardButton("🧡 Support 💛", url=f"https://t.me/{SUPPORT}"),
+                    InlineKeyboardButton("🧡 Updates 💛", url=f"https://t.me/{UPDATE}")
                 ],[
-                    InlineKeyboardButton("👤 Owner", url=f"https://t.me/{OWNER_USERNAME}"),
-                    InlineKeyboardButton("🎸 Assistant", url=f"https://t.me/{ASSUSERNAME}")
+                    InlineKeyboardButton("💘 Owner 💘", url=f"https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton("❣️ Assistant ❣️", url=f"https://t.me/{ASSUSERNAME}")
                 ],[
-                    InlineKeyboardButton("🤖 Source Code", url=f"https://t.me/bad_pipul")
+                    InlineKeyboardButton("💓 Source Code 💗", url=f"https://t.me/bad_pipul")
                 ],[
-                    InlineKeyboardButton("⬅️ Back", callback_data="cbhome")
+                    InlineKeyboardButton("❤️‍🩹 Back ❤️‍🩹", callback_data="cbhome")
                 ],
             ]
         ),
@@ -214,11 +215,11 @@ Only admins can use this buttons📍""",
         reply_markup=InlineKeyboardMarkup(
             [
               [
-                    InlineKeyboardButton("Support 🚶", url=f"https://t.me/{SUPPORT}"),
-                    InlineKeyboardButton("Updates 🤖", url=f"https://t.me/{UPDATE}")
+                    InlineKeyboardButton("🧡 Support 💛", url=f"https://t.me/{SUPPORT}"),
+                    InlineKeyboardButton("🧡 Updates 💛", url=f"https://t.me/{UPDATE}")
                 ],
             [InlineKeyboardButton("Basic Guide & Full Set-up", callback_data="setup")],
-            [InlineKeyboardButton("🔙  Back Home", callback_data="cbhome")]]
+            [InlineKeyboardButton("❤️‍🩹 Back Home ❤️‍🩹", callback_data="cbhome")]]
         ),
     )
 
@@ -243,7 +244,7 @@ Please don't forget to Join our Group :
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔙 Go Back", callback_data="others")
+                    InlineKeyboardButton("❤️‍🩹 Go Back ❤️‍🩹", callback_data="others")
                 ],
             ]
         ),
