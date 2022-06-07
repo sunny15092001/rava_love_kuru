@@ -42,8 +42,8 @@ async def load_start():
             pass
     await app.send_message(OWNER_ID, "**•ᴮᴬᴰʙᴏʏツ Started Successfully !!**")
    # Copyrighted Area
-    await client.join_chat("M8N_SUPPORT")
-    await client.join_chat("M8N_OFFICIAL")
+    await client.join_chat("ganda_pipul")
+    await client.join_chat("the_alter_egos")
     print("[INFO]: STARTED")
     
 
