@@ -25,17 +25,17 @@ Use inline buttons given below to know more about me !!""",
             [
                 [
                     InlineKeyboardButton(
-                        " 💋 Main Info 💋", callback_data="cbabout"),
+                        "💞 Main Info 💞", callback_data="cbabout"),
                     InlineKeyboardButton(
-                        " 💜 Commands 💜 ", callback_data="cbevery")
+                        "💋 Commands  💋", callback_data="cbevery")
                 ],
                 [
                     InlineKeyboardButton(
-                        "❤️Others ❤️", callback_data="others")
+                        "💙 Others 💚", callback_data="others")
                 ],
                 [
                     InlineKeyboardButton(
-                        " 💘✚ Click here to Summon Me 💘", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "💘✚ Click here to Summon Me 💘", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ]
            ]
         ),
